@@ -55,9 +55,10 @@ namespace WindowsFormsApp1
             segundoFormulario.Show();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void buscar_Click(object sender, EventArgs e)
         {
-
+            Form3 FormularioBusqueda = new Form3();
+            FormularioBusqueda.Show();
         }
     }
 }

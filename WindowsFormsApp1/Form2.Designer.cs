@@ -49,11 +49,11 @@
             this.label14 = new System.Windows.Forms.Label();
             this.promediar = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
-            this.mostPRomedioDeNewEst = new System.Windows.Forms.TextBox();
             this.newRegistro = new System.Windows.Forms.Button();
             this.finalisarRegistro = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.mostPRomedioDeNewEst = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label3
@@ -236,13 +236,6 @@
             this.label15.TabIndex = 30;
             this.label15.Text = "/100";
             // 
-            // mostPRomedioDeNewEst
-            // 
-            this.mostPRomedioDeNewEst.Location = new System.Drawing.Point(675, 391);
-            this.mostPRomedioDeNewEst.Name = "mostPRomedioDeNewEst";
-            this.mostPRomedioDeNewEst.Size = new System.Drawing.Size(54, 20);
-            this.mostPRomedioDeNewEst.TabIndex = 29;
-            // 
             // newRegistro
             // 
             this.newRegistro.Location = new System.Drawing.Point(89, 353);
@@ -278,6 +271,13 @@
             this.label4.Size = new System.Drawing.Size(117, 13);
             this.label4.TabIndex = 33;
             this.label4.Text = "APELLIDO  PATERNO";
+            // 
+            // mostPRomedioDeNewEst
+            // 
+            this.mostPRomedioDeNewEst.Location = new System.Drawing.Point(675, 391);
+            this.mostPRomedioDeNewEst.Name = "mostPRomedioDeNewEst";
+            this.mostPRomedioDeNewEst.Size = new System.Drawing.Size(54, 20);
+            this.mostPRomedioDeNewEst.TabIndex = 29;
             // 
             // Form2
             // 
@@ -341,10 +341,10 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button promediar;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox mostPRomedioDeNewEst;
         private System.Windows.Forms.Button newRegistro;
         private System.Windows.Forms.Button finalisarRegistro;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox mostPRomedioDeNewEst;
     }
 }

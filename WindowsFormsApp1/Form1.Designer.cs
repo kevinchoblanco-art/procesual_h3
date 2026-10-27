@@ -30,7 +30,6 @@
         {
             this.nuevoRegistro = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.busqCodigo = new System.Windows.Forms.TextBox();
             this.mostNotaMasBaja = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.mostREprobados = new System.Windows.Forms.TextBox();
@@ -43,7 +42,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.buscar = new System.Windows.Forms.Button();
             this.mostPromGral = new System.Windows.Forms.TextBox();
+            this.busqCodigo = new System.Windows.Forms.TextBox();
             this.mostNotaMasAlta = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tablaDeEstudiantes)).BeginInit();
             this.SuspendLayout();
@@ -67,14 +68,6 @@
             this.label2.Size = new System.Drawing.Size(222, 39);
             this.label2.TabIndex = 2;
             this.label2.Text = "S. C. R. A. E.";
-            // 
-            // busqCodigo
-            // 
-            this.busqCodigo.Location = new System.Drawing.Point(384, 143);
-            this.busqCodigo.Name = "busqCodigo";
-            this.busqCodigo.Size = new System.Drawing.Size(429, 20);
-            this.busqCodigo.TabIndex = 6;
-            this.busqCodigo.Text = "BUSCAR";
             // 
             // mostNotaMasBaja
             // 
@@ -180,6 +173,16 @@
             this.label6.TabIndex = 23;
             this.label6.Text = "NOTA MAS ALTA";
             // 
+            // buscar
+            // 
+            this.buscar.Location = new System.Drawing.Point(822, 141);
+            this.buscar.Name = "buscar";
+            this.buscar.Size = new System.Drawing.Size(75, 23);
+            this.buscar.TabIndex = 24;
+            this.buscar.Text = "BUSCAR";
+            this.buscar.UseVisualStyleBackColor = true;
+            this.buscar.Click += new System.EventHandler(this.buscar_Click);
+            // 
             // mostPromGral
             // 
             this.mostPromGral.Location = new System.Drawing.Point(384, 204);
@@ -187,19 +190,27 @@
             this.mostPromGral.Size = new System.Drawing.Size(57, 20);
             this.mostPromGral.TabIndex = 8;
             // 
+            // busqCodigo
+            // 
+            this.busqCodigo.Location = new System.Drawing.Point(384, 143);
+            this.busqCodigo.Name = "busqCodigo";
+            this.busqCodigo.Size = new System.Drawing.Size(429, 20);
+            this.busqCodigo.TabIndex = 6;
+            // 
             // mostNotaMasAlta
             // 
-            this.mostNotaMasAlta.Location = new System.Drawing.Point(652, 204);
+            this.mostNotaMasAlta.Location = new System.Drawing.Point(653, 204);
             this.mostNotaMasAlta.Name = "mostNotaMasAlta";
             this.mostNotaMasAlta.Size = new System.Drawing.Size(57, 20);
-            this.mostNotaMasAlta.TabIndex = 10;
-            this.mostNotaMasAlta.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.mostNotaMasAlta.TabIndex = 25;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1128, 618);
+            this.Controls.Add(this.mostNotaMasAlta);
+            this.Controls.Add(this.buscar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -212,7 +223,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.mostNotaMasBaja);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.mostNotaMasAlta);
             this.Controls.Add(this.mostPromGral);
             this.Controls.Add(this.busqCodigo);
             this.Controls.Add(this.label2);
@@ -229,7 +239,6 @@
 
         private System.Windows.Forms.Button nuevoRegistro;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox busqCodigo;
         private System.Windows.Forms.TextBox mostNotaMasBaja;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox mostREprobados;
@@ -242,7 +251,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button buscar;
         private System.Windows.Forms.TextBox mostPromGral;
+        private System.Windows.Forms.TextBox busqCodigo;
         private System.Windows.Forms.TextBox mostNotaMasAlta;
     }
 }
