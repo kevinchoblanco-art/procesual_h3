@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp1
 {
@@ -38,11 +39,11 @@ namespace WindowsFormsApp1
             tabla.Rows.Add(404, "JHON", "QUISPE", "ALIAGA", 60, 58, 74, 65.0);
 
             // 3. Vincular la tabla al DataGridView llamado dataGridView1
-            dataGridView1.DataSource = tabla;
+            tablaDeEstudiantes.DataSource = tabla;
 
             // 4. Ajustes visuales recomendados para que se vea ordenado
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.AllowUserToAddRows = false;
+            tablaDeEstudiantes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            tablaDeEstudiantes.AllowUserToAddRows = false;
         }
 
         private void newForm_Click(object sender, EventArgs e)
@@ -52,31 +53,6 @@ namespace WindowsFormsApp1
 
             // 2. Mostrarlo
             segundoFormulario.Show();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BUSQnOMBRE_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
