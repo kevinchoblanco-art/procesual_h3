@@ -11,8 +11,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp1
 {
+
     public partial class Form1 : Form
     {
+        public string DatoRecibido { get; set; }
         public Form1()
         {
             InitializeComponent();
@@ -20,38 +22,28 @@ namespace WindowsFormsApp1
         }
         private void CargarDatosEnGrilla()
         {
-            // 1. Crear la estructura de la tabla con las columnas de la imagen[cite: 1]
-            DataTable tabla = new DataTable();
-            tabla.Columns.Add("CODIGO", typeof(int));
-            tabla.Columns.Add("NOMBRE", typeof(string));
-            tabla.Columns.Add("APELLIDO PATERNO", typeof(string));
-            tabla.Columns.Add("APELLIDO MATERNO", typeof(string));
-            tabla.Columns.Add("PRACTICA 1", typeof(double));
-            tabla.Columns.Add("PRACTICA 2", typeof(double));
-            tabla.Columns.Add("PROYECTO FINAL", typeof(double));
-            tabla.Columns.Add("PROMEDIO", typeof(double));
+            tablade_ests.IniciarDatosDeTabla();
+            tablaDeEstudiantes.DataSource = null;
+            tablaDeEstudiantes.DataSource = tablade_ests.TABLAEST;
 
-            // 2. Insertar las filas con los datos correspondientes[cite: 1]
-            tabla.Rows.Add(400, "LUIS", "CONDORI", "QUISPE", 100, 75, 75, 82.5);
-            tabla.Rows.Add(401, "MOISES", "RIVERA", "ALARCON", 75, 89, 100, 89.2);
-            tabla.Rows.Add(402, "JAZMIN", "TORRES", "TORRES", 80, 100, 51, 74.4);
-            tabla.Rows.Add(403, "NEIMAR", "QUISPE", "MAMANI", 70, 80, 84, 78.6);
-            tabla.Rows.Add(404, "JHON", "QUISPE", "ALIAGA", 60, 58, 74, 65.0);
-
-            // 3. Vincular la tabla al DataGridView llamado dataGridView1
-            tablaDeEstudiantes.DataSource = tabla;
-
-            // 4. Ajustes visuales recomendados para que se vea ordenado
+          
             tablaDeEstudiantes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            tablaDeEstudiantes.AllowUserToAddRows = false;
+        }
+        private void Formulario_Load(object sender, EventArgs e)
+        {
+            tablade_ests.IniciarDatosDeTabla();
+            tablaDeEstudiantes.DataSource = tablade_ests.TABLAEST;
+        }
+        private void Formulario_Activated(object sender, EventArgs e)
+        {
+            tablaDeEstudiantes.DataSource = null;
+            tablaDeEstudiantes.DataSource = tablade_ests.TABLAEST;
         }
 
         private void newForm_Click(object sender, EventArgs e)
         {
-            // 1. Crear una instancia del segundo formulario
             Form2 segundoFormulario = new Form2();
-
-            // 2. Mostrarlo
+            segundoFormulario.DatoRecibido = "tablaDeEstudiantes";
             segundoFormulario.Show();
         }
 
@@ -59,6 +51,11 @@ namespace WindowsFormsApp1
         {
             Form3 FormularioBusqueda = new Form3();
             FormularioBusqueda.Show();
+        }
+
+        private void salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

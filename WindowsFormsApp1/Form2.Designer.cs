@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.newCodigo = new System.Windows.Forms.TextBox();
@@ -54,17 +53,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.mostPRomedioDeNewEst = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bernard MT Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(243, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(340, 38);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "REGISTRO DE ESTUDIANTE";
             // 
             // label1
             // 
@@ -251,8 +241,9 @@
             this.finalisarRegistro.Name = "finalisarRegistro";
             this.finalisarRegistro.Size = new System.Drawing.Size(380, 65);
             this.finalisarRegistro.TabIndex = 32;
-            this.finalisarRegistro.Text = "REGISTRAR Y FINALISAR REGISTRO";
+            this.finalisarRegistro.Text = "REGISTRAR Y VOLVER AL INICIO";
             this.finalisarRegistro.UseVisualStyleBackColor = true;
+            this.finalisarRegistro.Click += new System.EventHandler(this.finalisarRegistro_Click);
             // 
             // label2
             // 
@@ -279,11 +270,21 @@
             this.mostPRomedioDeNewEst.Size = new System.Drawing.Size(54, 20);
             this.mostPRomedioDeNewEst.TabIndex = 29;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bernard MT Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(243, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(340, 38);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "REGISTRO DE ESTUDIANTE";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 581);
+            this.ClientSize = new System.Drawing.Size(804, 581);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.finalisarRegistro);
             this.Controls.Add(this.newRegistro);
@@ -319,8 +320,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox newCodigo;
@@ -346,5 +345,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox mostPRomedioDeNewEst;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -194,12 +194,13 @@
             this.volverInicio.TabIndex = 57;
             this.volverInicio.Text = "VOLVER AL INICIO";
             this.volverInicio.UseVisualStyleBackColor = true;
+            this.volverInicio.Click += new System.EventHandler(this.volverInicio_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 496);
+            this.ClientSize = new System.Drawing.Size(734, 511);
             this.Controls.Add(this.volverInicio);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.mostPRomedioDeNewEst);
