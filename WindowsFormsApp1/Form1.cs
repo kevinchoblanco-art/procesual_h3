@@ -26,8 +26,15 @@ namespace WindowsFormsApp1
             n = tablade_ests.codigos.Count;
             if (n>0)
             {
-
                 calcualrest(); 
+                mostrar_estadisticas();
+            }
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (n > 0)
+            {
+                calcualrest();
                 mostrar_estadisticas();
             }
         }
@@ -40,81 +47,61 @@ namespace WindowsFormsApp1
             tablaDeEstudiantes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        private void newForm_Click(object sender, EventArgs e)
+        public double notaMasA()
         {
-            Form2 segundoFormulario = new Form2();
-            segundoFormulario.ShowDialog();
-            n = tablade_ests.codigos.Count;
-            CargarDatosEnGrilla();
-            calcualrest();
-            mostrar_estadisticas();
-            
-        }
-
-        public void buscar_Click(object sender, EventArgs e)
-        {
-            codigoB = int.Parse(busqCodigo.Text);
-            int n = tablade_ests.codigos.Count;
-            bool encontardoest = false;
-            busqCodigo.Text = " ";
-            busqCodigo.Focus();
-
-            for (int i = 1; i <= n; i++)
+            if (n >= 1)
             {
-                if (i == codigoB)
+                double guia = tablade_ests.promedios[0];
+                for (int i = 0; i < n; i++)
                 {
-                    Form3 FormularioBusqueda = new Form3();
-                    FormularioBusqueda.codigoenvrecb = codigoB;
-                    FormularioBusqueda.Show();
-                    encontardoest = true;
-                    break;
+                    if (tablade_ests.promedios[i] > guia)
+                    {
+                        guia = tablade_ests.promedios[i];
+                    }
                 }
+                Na = guia;
             }
-            if (encontardoest == false)
+            else
             {
-                MessageBox.Show("el codigo no existe");
+                Na = 0;
             }
-            
-        }
-
-        private void salir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        public double notaMasA ()
-        {
-            double guia = tablade_ests.promedios[0];
-            for (int i = 0 ; i<n ; i++)
-            {
-                if (tablade_ests.promedios[i] > guia)
-                {
-                    guia = tablade_ests.promedios[i];
-                }
-            }
-            Na = guia;
             return Na;
         }
         public double notaMasB()
         {
-            double guia = tablade_ests.promedios[0];
-            for (int i = 0; i < n; i++)
+            if (n >= 1)
             {
-                if (tablade_ests.promedios[i] < guia)
+                double guia = tablade_ests.promedios[0];
+                for (int i = 0; i < n; i++)
                 {
-                    guia = tablade_ests.promedios[i];
+                    if (tablade_ests.promedios[i] < guia)
+                    {
+                        guia = tablade_ests.promedios[i];
+                    }
                 }
+                Nb = guia;
             }
-            Nb = guia;
+            else
+            {
+                Nb = 0;
+            }
             return Nb;
         }
-        public double promedioDelCurso ()
+        public double promedioDelCurso()
         {
             double suma = 0;
-            for (int i = 0; i < n; i++)
+            if (n >= 1)
             {
-                suma = suma + tablade_ests.promedios[i];
+                for (int i = 0; i < n; i++)
+                {
+                    suma = suma + tablade_ests.promedios[i];
+                }
+                promGn = suma / n;
             }
-            promGn = suma / n;
+            else
+            {
+                promGn = 0;
+            }
             return promGn;
         }
         public int estu_aprob()
@@ -144,6 +131,15 @@ namespace WindowsFormsApp1
             return ER;
         }
 
+        public void calcualrest()
+        {
+            notaMasA();
+            notaMasB();
+            promedioDelCurso();
+            estu_aprob();
+            estu_reprob();
+        }
+
         public void mostrar_estadisticas()
         {
             mostNotaMasAlta.Text = Na.ToString();
@@ -153,21 +149,55 @@ namespace WindowsFormsApp1
             mostAprobados.Text = EA.ToString();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void newForm_Click(object sender, EventArgs e)
         {
-            if (n>0)
+            Form2 segundoFormulario = new Form2();
+            segundoFormulario.ShowDialog();
+            n = tablade_ests.codigos.Count;
+            CargarDatosEnGrilla();
+            calcualrest();
+            mostrar_estadisticas();
+            
+        }
+
+        public void buscar_Click(object sender, EventArgs e)
+        {
+            try
             {
-                calcualrest();
-                mostrar_estadisticas();
+                codigoB = int.Parse(busqCodigo.Text);
+                int n = tablade_ests.codigos.Count;
+                bool encontardoest = false;
+                busqCodigo.Text = " ";
+                busqCodigo.Focus();
+
+                for (int i = 1; i <= n; i++)
+                {
+                    if (i == codigoB)
+                    {
+                        Form3 FormularioBusqueda = new Form3();
+                        FormularioBusqueda.codigoenvrecb = codigoB;
+                        FormularioBusqueda.Show();
+                        encontardoest = true;
+                        break;
+                    }
+                }
+                if (encontardoest == false)
+                {
+                    busqCodigo.Text = " ";
+                    busqCodigo.Focus();
+                    MessageBox.Show("ERROR 404 : EL CODIGO INGRESADO NO EXISTE :(");
+                }
+            }catch (FormatException)
+            {
+                busqCodigo.Text = " ";
+                busqCodigo.Focus();
+                MessageBox.Show("ERROR 401: SE INGRESARON VALORES NO NUMERICOS O SE DEJARON ESPACIOS EN BLANCO :(");
             }
         }
-        public void calcualrest()
+
+        private void salir_Click(object sender, EventArgs e)
         {
-            notaMasA();
-            notaMasB();
-            promedioDelCurso();
-            estu_aprob();
-            estu_reprob();
+            this.Close();
         }
     }
 }

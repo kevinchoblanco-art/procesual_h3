@@ -17,7 +17,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-        
+        private void Form3_Load_1(object sender, EventArgs e)
+        {
+            busquedaPorCOdigo();
+        }
+
         public void busquedaPorCOdigo()
         {
             int n =tablade_ests.codigos.Count+1;
@@ -42,11 +46,6 @@ namespace WindowsFormsApp1
         private void volverInicio_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void Form3_Load_1(object sender, EventArgs e)
-        {
-            busquedaPorCOdigo();
         }
     }
 }

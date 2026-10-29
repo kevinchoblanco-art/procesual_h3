@@ -82,7 +82,6 @@
             this.ApellidoMbus.Name = "ApellidoMbus";
             this.ApellidoMbus.Size = new System.Drawing.Size(268, 20);
             this.ApellidoMbus.TabIndex = 40;
-            this.ApellidoMbus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ApellidoPbus
             // 
@@ -93,7 +92,6 @@
             this.ApellidoPbus.Name = "ApellidoPbus";
             this.ApellidoPbus.Size = new System.Drawing.Size(268, 20);
             this.ApellidoPbus.TabIndex = 39;
-            this.ApellidoPbus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Nombrebus
             // 
@@ -104,7 +102,6 @@
             this.Nombrebus.Name = "Nombrebus";
             this.Nombrebus.Size = new System.Drawing.Size(268, 20);
             this.Nombrebus.TabIndex = 38;
-            this.Nombrebus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Codigobus
             // 
@@ -115,7 +112,6 @@
             this.Codigobus.Name = "Codigobus";
             this.Codigobus.Size = new System.Drawing.Size(268, 20);
             this.Codigobus.TabIndex = 37;
-            this.Codigobus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 

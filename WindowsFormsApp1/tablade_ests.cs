@@ -11,14 +11,14 @@ namespace WindowsFormsApp1
     {
         public static int codigox = 1;
         public static DataTable TABLAEST { get; set; } = new DataTable();
-            public static List<int> codigos = new List<int>();
-            public static List<string> nombres = new List<string>();
-            public static List<string> apellidosP = new List<string>();
-            public static List<string> apellidosM = new List<string>();
-            public static List<int> notas1 = new List<int>();
-            public static List<int> notas2 = new List<int>();
-            public static List<int> notas3 = new List<int>();
-            public static List<double> promedios = new List<double>();
+        public static List<int> codigos = new List<int>();
+        public static List<string> nombres = new List<string>();
+        public static List<string> apellidosP = new List<string>();
+        public static List<string> apellidosM = new List<string>();
+        public static List<int> notas1 = new List<int>();
+        public static List<int> notas2 = new List<int>();
+        public static List<int> notas3 = new List<int>();
+        public static List<double> promedios = new List<double>();
 
 
         public static void IniciarDatosDeTabla()
