@@ -47,15 +47,16 @@
             this.label13 = new System.Windows.Forms.Label();
             this.notaEvaluacion = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.finalisarRegistro = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.mostPRomedioDeNewEst = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.promediar = new System.Windows.Forms.Button();
             this.newRegistro = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.promediar = new System.Windows.Forms.Button();
+            this.mostPRomedioDeNewEst = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -243,17 +244,6 @@
             this.label14.TabIndex = 24;
             this.label14.Text = "PROYECTO FINAL";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(858, 391);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(39, 20);
-            this.label15.TabIndex = 30;
-            this.label15.Text = "/100";
-            // 
             // finalisarRegistro
             // 
             this.finalisarRegistro.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -289,19 +279,6 @@
             this.label4.TabIndex = 33;
             this.label4.Text = "APELLIDO  PATERNO   :";
             // 
-            // mostPRomedioDeNewEst
-            // 
-            this.mostPRomedioDeNewEst.BackColor = System.Drawing.Color.White;
-            this.mostPRomedioDeNewEst.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.mostPRomedioDeNewEst.Cursor = System.Windows.Forms.Cursors.Default;
-            this.mostPRomedioDeNewEst.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mostPRomedioDeNewEst.Location = new System.Drawing.Point(788, 391);
-            this.mostPRomedioDeNewEst.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.mostPRomedioDeNewEst.Name = "mostPRomedioDeNewEst";
-            this.mostPRomedioDeNewEst.Size = new System.Drawing.Size(62, 22);
-            this.mostPRomedioDeNewEst.TabIndex = 29;
-            this.mostPRomedioDeNewEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -312,18 +289,6 @@
             this.label3.Size = new System.Drawing.Size(441, 45);
             this.label3.TabIndex = 5;
             this.label3.Text = "REGISTRO DE ESTUDIANTE";
-            // 
-            // promediar
-            // 
-            this.promediar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.promediar.Location = new System.Drawing.Point(665, 386);
-            this.promediar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.promediar.Name = "promediar";
-            this.promediar.Size = new System.Drawing.Size(100, 25);
-            this.promediar.TabIndex = 34;
-            this.promediar.Text = "PROMEDIAR";
-            this.promediar.UseVisualStyleBackColor = true;
-            this.promediar.Click += new System.EventHandler(this.promediar_Click);
             // 
             // newRegistro
             // 
@@ -349,12 +314,62 @@
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
+            // promediar
+            // 
+            this.promediar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.promediar.Location = new System.Drawing.Point(665, 386);
+            this.promediar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.promediar.Name = "promediar";
+            this.promediar.Size = new System.Drawing.Size(100, 25);
+            this.promediar.TabIndex = 34;
+            this.promediar.Text = "PROMEDIAR";
+            this.promediar.UseVisualStyleBackColor = true;
+            this.promediar.Click += new System.EventHandler(this.promediar_Click);
+            // 
+            // mostPRomedioDeNewEst
+            // 
+            this.mostPRomedioDeNewEst.BackColor = System.Drawing.Color.White;
+            this.mostPRomedioDeNewEst.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mostPRomedioDeNewEst.Cursor = System.Windows.Forms.Cursors.Default;
+            this.mostPRomedioDeNewEst.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mostPRomedioDeNewEst.Location = new System.Drawing.Point(788, 391);
+            this.mostPRomedioDeNewEst.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.mostPRomedioDeNewEst.Name = "mostPRomedioDeNewEst";
+            this.mostPRomedioDeNewEst.Size = new System.Drawing.Size(62, 22);
+            this.mostPRomedioDeNewEst.TabIndex = 29;
+            this.mostPRomedioDeNewEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(858, 391);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(39, 20);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "/100";
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(653, 444);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(244, 65);
+            this.button1.TabIndex = 37;
+            this.button1.Text = "SALIR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(938, 581);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.newRegistro);
             this.Controls.Add(this.promediar);
@@ -413,14 +428,15 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox notaEvaluacion;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button finalisarRegistro;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox mostPRomedioDeNewEst;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button promediar;
         private System.Windows.Forms.Button newRegistro;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button promediar;
+        private System.Windows.Forms.TextBox mostPRomedioDeNewEst;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button1;
     }
 }
