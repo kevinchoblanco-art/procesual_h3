@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.newCodigo = new System.Windows.Forms.TextBox();
@@ -54,174 +55,213 @@
             this.label3 = new System.Windows.Forms.Label();
             this.promediar = new System.Windows.Forms.Button();
             this.newRegistro = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(111, 146);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(125, 143);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(75, 17);
             this.label1.TabIndex = 6;
-            this.label1.Text = "CODIGO";
+            this.label1.Text = "CODIGO   :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 310);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(43, 310);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 13);
+            this.label5.Size = new System.Drawing.Size(157, 17);
             this.label5.TabIndex = 9;
-            this.label5.Text = "APELLIDO  MATERNO";
+            this.label5.Text = "APELLIDO  MATERNO   :";
             // 
             // newCodigo
             // 
-            this.newCodigo.Location = new System.Drawing.Point(202, 143);
+            this.newCodigo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.newCodigo.Location = new System.Drawing.Point(208, 143);
+            this.newCodigo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.newCodigo.Name = "newCodigo";
-            this.newCodigo.Size = new System.Drawing.Size(268, 20);
+            this.newCodigo.Size = new System.Drawing.Size(396, 22);
             this.newCodigo.TabIndex = 10;
             // 
             // newNombre
             // 
-            this.newNombre.Location = new System.Drawing.Point(202, 194);
+            this.newNombre.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.newNombre.Location = new System.Drawing.Point(208, 194);
+            this.newNombre.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.newNombre.Name = "newNombre";
-            this.newNombre.Size = new System.Drawing.Size(268, 20);
+            this.newNombre.Size = new System.Drawing.Size(396, 22);
             this.newNombre.TabIndex = 11;
             // 
             // newApellidoP
             // 
-            this.newApellidoP.Location = new System.Drawing.Point(202, 249);
+            this.newApellidoP.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.newApellidoP.Location = new System.Drawing.Point(208, 249);
+            this.newApellidoP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.newApellidoP.Name = "newApellidoP";
-            this.newApellidoP.Size = new System.Drawing.Size(268, 20);
+            this.newApellidoP.Size = new System.Drawing.Size(396, 22);
             this.newApellidoP.TabIndex = 12;
             // 
             // newApellidoM
             // 
-            this.newApellidoM.Location = new System.Drawing.Point(202, 307);
+            this.newApellidoM.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.newApellidoM.Location = new System.Drawing.Point(208, 307);
+            this.newApellidoM.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.newApellidoM.Name = "newApellidoM";
-            this.newApellidoM.Size = new System.Drawing.Size(268, 20);
+            this.newApellidoM.Size = new System.Drawing.Size(396, 22);
             this.newApellidoM.TabIndex = 13;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(587, 149);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(685, 149);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 13);
+            this.label6.Size = new System.Drawing.Size(81, 17);
             this.label6.TabIndex = 14;
             this.label6.Text = "PRACTICA 1";
             // 
             // notaPractica1
             // 
-            this.notaPractica1.Location = new System.Drawing.Point(675, 146);
+            this.notaPractica1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.notaPractica1.Location = new System.Drawing.Point(788, 146);
+            this.notaPractica1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.notaPractica1.Name = "notaPractica1";
-            this.notaPractica1.Size = new System.Drawing.Size(54, 20);
+            this.notaPractica1.Size = new System.Drawing.Size(62, 22);
             this.notaPractica1.TabIndex = 17;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(690, 169);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(805, 169);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 13);
+            this.label7.Size = new System.Drawing.Size(31, 15);
             this.label7.TabIndex = 18;
             this.label7.Text = "30%";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(735, 146);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(858, 146);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(36, 18);
+            this.label8.Size = new System.Drawing.Size(39, 20);
             this.label8.TabIndex = 19;
             this.label8.Text = "/100";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(735, 229);
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(858, 229);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 18);
+            this.label9.Size = new System.Drawing.Size(39, 20);
             this.label9.TabIndex = 23;
             this.label9.Text = "/100";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(690, 252);
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(805, 252);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(27, 13);
+            this.label10.Size = new System.Drawing.Size(31, 15);
             this.label10.TabIndex = 22;
             this.label10.Text = "30%";
             // 
             // notaPractica2
             // 
-            this.notaPractica2.Location = new System.Drawing.Point(675, 229);
+            this.notaPractica2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.notaPractica2.Location = new System.Drawing.Point(788, 229);
+            this.notaPractica2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.notaPractica2.Name = "notaPractica2";
-            this.notaPractica2.Size = new System.Drawing.Size(54, 20);
+            this.notaPractica2.Size = new System.Drawing.Size(62, 22);
             this.notaPractica2.TabIndex = 21;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(587, 232);
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(685, 232);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(69, 13);
+            this.label11.Size = new System.Drawing.Size(81, 17);
             this.label11.TabIndex = 20;
             this.label11.Text = "PRACTICA 2";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(735, 310);
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(858, 310);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 18);
+            this.label12.Size = new System.Drawing.Size(39, 20);
             this.label12.TabIndex = 27;
             this.label12.Text = "/100";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(690, 333);
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(805, 333);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(27, 13);
+            this.label13.Size = new System.Drawing.Size(31, 15);
             this.label13.TabIndex = 26;
             this.label13.Text = "40%";
             // 
             // notaEvaluacion
             // 
-            this.notaEvaluacion.Location = new System.Drawing.Point(675, 310);
+            this.notaEvaluacion.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.notaEvaluacion.Location = new System.Drawing.Point(788, 310);
+            this.notaEvaluacion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.notaEvaluacion.Name = "notaEvaluacion";
-            this.notaEvaluacion.Size = new System.Drawing.Size(54, 20);
+            this.notaEvaluacion.Size = new System.Drawing.Size(62, 22);
             this.notaEvaluacion.TabIndex = 25;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(557, 314);
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(650, 314);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(99, 13);
+            this.label14.Size = new System.Drawing.Size(116, 17);
             this.label14.TabIndex = 24;
             this.label14.Text = "PROYECTO FINAL";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(735, 391);
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(858, 391);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(36, 18);
+            this.label15.Size = new System.Drawing.Size(39, 20);
             this.label15.TabIndex = 30;
             this.label15.Text = "/100";
             // 
             // finalisarRegistro
             // 
-            this.finalisarRegistro.Location = new System.Drawing.Point(89, 444);
+            this.finalisarRegistro.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.finalisarRegistro.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalisarRegistro.Location = new System.Drawing.Point(104, 444);
+            this.finalisarRegistro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.finalisarRegistro.Name = "finalisarRegistro";
-            this.finalisarRegistro.Size = new System.Drawing.Size(380, 65);
+            this.finalisarRegistro.Size = new System.Drawing.Size(500, 65);
             this.finalisarRegistro.TabIndex = 32;
             this.finalisarRegistro.Text = "REGISTRAR Y VOLVER AL INICIO";
             this.finalisarRegistro.UseVisualStyleBackColor = true;
@@ -230,43 +270,56 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(93, 197);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(104, 194);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.Size = new System.Drawing.Size(96, 17);
             this.label2.TabIndex = 7;
-            this.label2.Text = "NOMBRE(S)";
+            this.label2.Text = "NOMBRE(S)   :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 252);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(48, 249);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 13);
+            this.label4.Size = new System.Drawing.Size(152, 17);
             this.label4.TabIndex = 33;
-            this.label4.Text = "APELLIDO  PATERNO";
+            this.label4.Text = "APELLIDO  PATERNO   :";
             // 
             // mostPRomedioDeNewEst
             // 
-            this.mostPRomedioDeNewEst.Location = new System.Drawing.Point(675, 391);
+            this.mostPRomedioDeNewEst.BackColor = System.Drawing.Color.White;
+            this.mostPRomedioDeNewEst.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mostPRomedioDeNewEst.Cursor = System.Windows.Forms.Cursors.Default;
+            this.mostPRomedioDeNewEst.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mostPRomedioDeNewEst.Location = new System.Drawing.Point(788, 391);
+            this.mostPRomedioDeNewEst.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.mostPRomedioDeNewEst.Name = "mostPRomedioDeNewEst";
-            this.mostPRomedioDeNewEst.Size = new System.Drawing.Size(54, 20);
+            this.mostPRomedioDeNewEst.Size = new System.Drawing.Size(62, 22);
             this.mostPRomedioDeNewEst.TabIndex = 29;
+            this.mostPRomedioDeNewEst.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bernard MT Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(243, 35);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(244, 34);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(340, 38);
+            this.label3.Size = new System.Drawing.Size(441, 45);
             this.label3.TabIndex = 5;
             this.label3.Text = "REGISTRO DE ESTUDIANTE";
             // 
             // promediar
             // 
-            this.promediar.Location = new System.Drawing.Point(570, 386);
+            this.promediar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.promediar.Location = new System.Drawing.Point(665, 386);
+            this.promediar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.promediar.Name = "promediar";
-            this.promediar.Size = new System.Drawing.Size(86, 25);
+            this.promediar.Size = new System.Drawing.Size(100, 25);
             this.promediar.TabIndex = 34;
             this.promediar.Text = "PROMEDIAR";
             this.promediar.UseVisualStyleBackColor = true;
@@ -274,19 +327,35 @@
             // 
             // newRegistro
             // 
-            this.newRegistro.Location = new System.Drawing.Point(89, 364);
+            this.newRegistro.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.newRegistro.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newRegistro.Location = new System.Drawing.Point(104, 364);
+            this.newRegistro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.newRegistro.Name = "newRegistro";
-            this.newRegistro.Size = new System.Drawing.Size(375, 69);
+            this.newRegistro.Size = new System.Drawing.Size(500, 69);
             this.newRegistro.TabIndex = 35;
             this.newRegistro.Text = "RESGISTRAR E INICAR NUEVO REGISTRO";
             this.newRegistro.UseVisualStyleBackColor = true;
             this.newRegistro.Click += new System.EventHandler(this.newRegistro_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(2, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(245, 111);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 36;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 581);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(938, 581);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.newRegistro);
             this.Controls.Add(this.promediar);
             this.Controls.Add(this.label4);
@@ -313,9 +382,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "UNIFRNAZ - REGISTRO DE ESTUDIANTE";
             this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,5 +421,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button promediar;
         private System.Windows.Forms.Button newRegistro;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
