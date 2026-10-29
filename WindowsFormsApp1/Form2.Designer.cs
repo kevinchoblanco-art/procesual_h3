@@ -46,14 +46,14 @@
             this.label13 = new System.Windows.Forms.Label();
             this.notaEvaluacion = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.promediar = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
-            this.newRegistro = new System.Windows.Forms.Button();
             this.finalisarRegistro = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.mostPRomedioDeNewEst = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.promediar = new System.Windows.Forms.Button();
+            this.newRegistro = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -207,15 +207,6 @@
             this.label14.TabIndex = 24;
             this.label14.Text = "PROYECTO FINAL";
             // 
-            // promediar
-            // 
-            this.promediar.Location = new System.Drawing.Point(560, 383);
-            this.promediar.Name = "promediar";
-            this.promediar.Size = new System.Drawing.Size(96, 35);
-            this.promediar.TabIndex = 28;
-            this.promediar.Text = "PROMEDIAR";
-            this.promediar.UseVisualStyleBackColor = true;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -225,15 +216,6 @@
             this.label15.Size = new System.Drawing.Size(36, 18);
             this.label15.TabIndex = 30;
             this.label15.Text = "/100";
-            // 
-            // newRegistro
-            // 
-            this.newRegistro.Location = new System.Drawing.Point(89, 353);
-            this.newRegistro.Name = "newRegistro";
-            this.newRegistro.Size = new System.Drawing.Size(380, 65);
-            this.newRegistro.TabIndex = 31;
-            this.newRegistro.Text = "REGISTRAR E INICIAR NUEVO REGISTRO";
-            this.newRegistro.UseVisualStyleBackColor = true;
             // 
             // finalisarRegistro
             // 
@@ -280,17 +262,37 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "REGISTRO DE ESTUDIANTE";
             // 
+            // promediar
+            // 
+            this.promediar.Location = new System.Drawing.Point(570, 386);
+            this.promediar.Name = "promediar";
+            this.promediar.Size = new System.Drawing.Size(86, 25);
+            this.promediar.TabIndex = 34;
+            this.promediar.Text = "PROMEDIAR";
+            this.promediar.UseVisualStyleBackColor = true;
+            this.promediar.Click += new System.EventHandler(this.promediar_Click);
+            // 
+            // newRegistro
+            // 
+            this.newRegistro.Location = new System.Drawing.Point(89, 364);
+            this.newRegistro.Name = "newRegistro";
+            this.newRegistro.Size = new System.Drawing.Size(375, 69);
+            this.newRegistro.TabIndex = 35;
+            this.newRegistro.Text = "RESGISTRAR E INICAR NUEVO REGISTRO";
+            this.newRegistro.UseVisualStyleBackColor = true;
+            this.newRegistro.Click += new System.EventHandler(this.newRegistro_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 581);
+            this.Controls.Add(this.newRegistro);
+            this.Controls.Add(this.promediar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.finalisarRegistro);
-            this.Controls.Add(this.newRegistro);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.mostPRomedioDeNewEst);
-            this.Controls.Add(this.promediar);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.notaEvaluacion);
@@ -338,13 +340,13 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox notaEvaluacion;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button promediar;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button newRegistro;
         private System.Windows.Forms.Button finalisarRegistro;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox mostPRomedioDeNewEst;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button promediar;
+        private System.Windows.Forms.Button newRegistro;
     }
 }

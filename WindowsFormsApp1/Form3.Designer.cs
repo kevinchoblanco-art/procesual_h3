@@ -30,19 +30,19 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.newApellidoM = new System.Windows.Forms.TextBox();
-            this.newApellidoP = new System.Windows.Forms.TextBox();
-            this.newNombre = new System.Windows.Forms.TextBox();
-            this.newCodigo = new System.Windows.Forms.TextBox();
+            this.ApellidoMbus = new System.Windows.Forms.TextBox();
+            this.ApellidoPbus = new System.Windows.Forms.TextBox();
+            this.Nombrebus = new System.Windows.Forms.TextBox();
+            this.Codigobus = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.mostPRomedioDeNewEst = new System.Windows.Forms.TextBox();
-            this.notaEvaluacion = new System.Windows.Forms.TextBox();
+            this.mostPRomediobus = new System.Windows.Forms.TextBox();
+            this.notaEvaluacionbus = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.notaPractica2 = new System.Windows.Forms.TextBox();
+            this.notaPractica2bus = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.notaPractica1 = new System.Windows.Forms.TextBox();
+            this.notaPractica1bus = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.volverInicio = new System.Windows.Forms.Button();
@@ -67,33 +67,33 @@
             this.label4.TabIndex = 41;
             this.label4.Text = "APELLIDO  PATERNO";
             // 
-            // newApellidoM
+            // ApellidoMbus
             // 
-            this.newApellidoM.Location = new System.Drawing.Point(191, 316);
-            this.newApellidoM.Name = "newApellidoM";
-            this.newApellidoM.Size = new System.Drawing.Size(268, 20);
-            this.newApellidoM.TabIndex = 40;
+            this.ApellidoMbus.Location = new System.Drawing.Point(191, 316);
+            this.ApellidoMbus.Name = "ApellidoMbus";
+            this.ApellidoMbus.Size = new System.Drawing.Size(268, 20);
+            this.ApellidoMbus.TabIndex = 40;
             // 
-            // newApellidoP
+            // ApellidoPbus
             // 
-            this.newApellidoP.Location = new System.Drawing.Point(191, 258);
-            this.newApellidoP.Name = "newApellidoP";
-            this.newApellidoP.Size = new System.Drawing.Size(268, 20);
-            this.newApellidoP.TabIndex = 39;
+            this.ApellidoPbus.Location = new System.Drawing.Point(191, 258);
+            this.ApellidoPbus.Name = "ApellidoPbus";
+            this.ApellidoPbus.Size = new System.Drawing.Size(268, 20);
+            this.ApellidoPbus.TabIndex = 39;
             // 
-            // newNombre
+            // Nombrebus
             // 
-            this.newNombre.Location = new System.Drawing.Point(191, 203);
-            this.newNombre.Name = "newNombre";
-            this.newNombre.Size = new System.Drawing.Size(268, 20);
-            this.newNombre.TabIndex = 38;
+            this.Nombrebus.Location = new System.Drawing.Point(191, 203);
+            this.Nombrebus.Name = "Nombrebus";
+            this.Nombrebus.Size = new System.Drawing.Size(268, 20);
+            this.Nombrebus.TabIndex = 38;
             // 
-            // newCodigo
+            // Codigobus
             // 
-            this.newCodigo.Location = new System.Drawing.Point(191, 152);
-            this.newCodigo.Name = "newCodigo";
-            this.newCodigo.Size = new System.Drawing.Size(268, 20);
-            this.newCodigo.TabIndex = 37;
+            this.Codigobus.Location = new System.Drawing.Point(191, 152);
+            this.Codigobus.Name = "Codigobus";
+            this.Codigobus.Size = new System.Drawing.Size(268, 20);
+            this.Codigobus.TabIndex = 37;
             // 
             // label5
             // 
@@ -122,19 +122,19 @@
             this.label3.TabIndex = 34;
             this.label3.Text = "CODIGO";
             // 
-            // mostPRomedioDeNewEst
+            // mostPRomediobus
             // 
-            this.mostPRomedioDeNewEst.Location = new System.Drawing.Point(612, 316);
-            this.mostPRomedioDeNewEst.Name = "mostPRomedioDeNewEst";
-            this.mostPRomedioDeNewEst.Size = new System.Drawing.Size(54, 20);
-            this.mostPRomedioDeNewEst.TabIndex = 55;
+            this.mostPRomediobus.Location = new System.Drawing.Point(612, 316);
+            this.mostPRomediobus.Name = "mostPRomediobus";
+            this.mostPRomediobus.Size = new System.Drawing.Size(54, 20);
+            this.mostPRomediobus.TabIndex = 55;
             // 
-            // notaEvaluacion
+            // notaEvaluacionbus
             // 
-            this.notaEvaluacion.Location = new System.Drawing.Point(612, 258);
-            this.notaEvaluacion.Name = "notaEvaluacion";
-            this.notaEvaluacion.Size = new System.Drawing.Size(54, 20);
-            this.notaEvaluacion.TabIndex = 51;
+            this.notaEvaluacionbus.Location = new System.Drawing.Point(612, 258);
+            this.notaEvaluacionbus.Name = "notaEvaluacionbus";
+            this.notaEvaluacionbus.Size = new System.Drawing.Size(54, 20);
+            this.notaEvaluacionbus.TabIndex = 51;
             // 
             // label14
             // 
@@ -145,12 +145,12 @@
             this.label14.TabIndex = 50;
             this.label14.Text = "PROYECTO FINAL";
             // 
-            // notaPractica2
+            // notaPractica2bus
             // 
-            this.notaPractica2.Location = new System.Drawing.Point(612, 203);
-            this.notaPractica2.Name = "notaPractica2";
-            this.notaPractica2.Size = new System.Drawing.Size(54, 20);
-            this.notaPractica2.TabIndex = 47;
+            this.notaPractica2bus.Location = new System.Drawing.Point(612, 203);
+            this.notaPractica2bus.Name = "notaPractica2bus";
+            this.notaPractica2bus.Size = new System.Drawing.Size(54, 20);
+            this.notaPractica2bus.TabIndex = 47;
             // 
             // label11
             // 
@@ -161,12 +161,12 @@
             this.label11.TabIndex = 46;
             this.label11.Text = "PRACTICA 2";
             // 
-            // notaPractica1
+            // notaPractica1bus
             // 
-            this.notaPractica1.Location = new System.Drawing.Point(612, 152);
-            this.notaPractica1.Name = "notaPractica1";
-            this.notaPractica1.Size = new System.Drawing.Size(54, 20);
-            this.notaPractica1.TabIndex = 43;
+            this.notaPractica1bus.Location = new System.Drawing.Point(612, 152);
+            this.notaPractica1bus.Name = "notaPractica1bus";
+            this.notaPractica1bus.Size = new System.Drawing.Size(54, 20);
+            this.notaPractica1bus.TabIndex = 43;
             // 
             // label6
             // 
@@ -203,24 +203,25 @@
             this.ClientSize = new System.Drawing.Size(734, 511);
             this.Controls.Add(this.volverInicio);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.mostPRomedioDeNewEst);
-            this.Controls.Add(this.notaEvaluacion);
+            this.Controls.Add(this.mostPRomediobus);
+            this.Controls.Add(this.notaEvaluacionbus);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.notaPractica2);
+            this.Controls.Add(this.notaPractica2bus);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.notaPractica1);
+            this.Controls.Add(this.notaPractica1bus);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.newApellidoM);
-            this.Controls.Add(this.newApellidoP);
-            this.Controls.Add(this.newNombre);
-            this.Controls.Add(this.newCodigo);
+            this.Controls.Add(this.ApellidoMbus);
+            this.Controls.Add(this.ApellidoPbus);
+            this.Controls.Add(this.Nombrebus);
+            this.Controls.Add(this.Codigobus);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,19 +231,19 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox newApellidoM;
-        private System.Windows.Forms.TextBox newApellidoP;
-        private System.Windows.Forms.TextBox newNombre;
-        private System.Windows.Forms.TextBox newCodigo;
+        private System.Windows.Forms.TextBox ApellidoMbus;
+        private System.Windows.Forms.TextBox ApellidoPbus;
+        private System.Windows.Forms.TextBox Nombrebus;
+        private System.Windows.Forms.TextBox Codigobus;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox mostPRomedioDeNewEst;
-        private System.Windows.Forms.TextBox notaEvaluacion;
+        private System.Windows.Forms.TextBox mostPRomediobus;
+        private System.Windows.Forms.TextBox notaEvaluacionbus;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox notaPractica2;
+        private System.Windows.Forms.TextBox notaPractica2bus;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox notaPractica1;
+        private System.Windows.Forms.TextBox notaPractica1bus;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button volverInicio;
